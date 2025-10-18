@@ -84,14 +84,14 @@ export default function AboutPage() {
           </ul>
         </section>
 
-  <section className="text-white rounded-lg p-6 sm:p-8 text-center" style={{ background: 'var(--primary)' }}>
+  <section className="rounded-lg p-8 sm:p-12 text-center" style={{ background: 'var(--primary)' }}>
           <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-          <p className="mb-6 text-lg">
+          <p className="text-gray-700 max-w-3xl mx-auto mb-6">
             Have a story to share or want to be a guest on our show?
           </p>
           <a
             href="mailto:hello@Rejection is Redirection.com"
-            className="inline-block bg-white [color:var(--primary)] px-6 sm:px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+            className="bg-blue-600 hover:bg-blue-400 text-gray-100 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Contact Us
           </a>

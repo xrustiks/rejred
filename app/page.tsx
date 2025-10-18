@@ -19,7 +19,7 @@ export default function Home() {
         <div className="flex gap-4 justify-center">
           <Link
             href="/podcasts"
-            className="bg-blue-600 hover:bg-blue-1000 text-gray-100 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-blue-600 hover:bg-blue-400 text-gray-100 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Listen to Podcasts
           </Link>
@@ -96,7 +96,7 @@ export default function Home() {
         </p>
         <Link
           href="/about"
-          className="inline-block [background:var(--primary)] hover:brightness-110 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+          className="bg-blue-600 hover:bg-blue-400 text-gray-100 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
         >
           Learn More About Us
         </Link>
