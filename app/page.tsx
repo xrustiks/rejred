@@ -19,7 +19,7 @@ export default function Home() {
         <div className="flex gap-4 justify-center">
           <Link
             href="/podcasts"
-            className="[background:var(--primary)] hover:brightness-110 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-blue-600 hover:bg-blue-1000 text-gray-100 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Listen to Podcasts
           </Link>
@@ -65,7 +65,7 @@ export default function Home() {
       <section className="mb-12 sm:mb-16">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900">Latest Videos</h2>
-          <Link href="/videos" className="text-blue-600 hover:text-blue-700 font-semibold">
+          <Link href="/videos" className="text-blue-700 hover:text-blue-700 font-semibold">
             View All →
           </Link>
         </div>
