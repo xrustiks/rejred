@@ -103,7 +103,7 @@ export default function Header() {
             open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
           }`}
         >
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-row justify-center gap-4">
             <li>
               <Link href="/" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
                 Home
