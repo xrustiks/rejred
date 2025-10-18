@@ -17,6 +17,7 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // Makes header hide on scroll down, show on scroll up
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 40);
@@ -24,6 +25,22 @@ export default function Header() {
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
+  // Makes menu close on scroll or outside click
+  useEffect(() => {
+    const handleScroll = () => setOpen(false);
+    const handleClick = (e) => {
+      if (!e.target.closest('nav')) setOpen(false);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('click', handleClick);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('click', handleClick);
+    };
   }, []);
 
   return (
@@ -81,37 +98,39 @@ export default function Header() {
         </div>
 
         {/* Mobile menu */}
-        {open && (
-          <div className="md:hidden mt-4 border-t border-gray-100 pt-4">
-            <ul className="flex flex-col gap-4">
-              <li>
-                <Link href="/" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/podcasts" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
-                  Podcasts
-                </Link>
-              </li>
-              <li>
-                <Link href="/videos" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
-                  Videos
-                </Link>
-              </li>
-              <li>
-                <Link href="/photos" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
-                  Photos
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
-                  About
-                </Link>
-              </li>
-            </ul>
-          </div>
-        )}
+        <div
+          className={`md:hidden mt-4 border-t border-gray-100 pt-4 transition-all duration-300 overflow-hidden ${
+            open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
+          }`}
+        >
+          <ul className="flex flex-col gap-4">
+            <li>
+              <Link href="/" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/podcasts" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
+                Podcasts
+              </Link>
+            </li>
+            <li>
+              <Link href="/videos" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
+                Videos
+              </Link>
+            </li>
+            <li>
+              <Link href="/photos" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
+                Photos
+              </Link>
+            </li>
+            <li>
+              <Link href="/about" className="block py-2 text-gray-700 hover:[color:var(--primary)]" onClick={() => setOpen(false)}>
+                About
+              </Link>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
   );
