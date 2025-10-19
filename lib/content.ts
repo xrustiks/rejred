@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { PodcastEpisode, VideoEpisode } from '@/types/podcast';
 
+// This file contains functions to read podcast and video content from the filesystem
 const contentDirectory = path.join(process.cwd(), 'content');
 
 export function getEpisodes(): PodcastEpisode[] {

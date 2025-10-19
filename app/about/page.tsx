@@ -91,7 +91,7 @@ export default function AboutPage() {
           </p>
           <a
             href="mailto:hello@Rejection is Redirection.com"
-            className="bg-blue-600 hover:bg-blue-400 text-gray-100 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Contact Us
           </a>
