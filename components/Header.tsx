@@ -58,27 +58,27 @@ export default function Header() {
           {/* Desktop nav */}
           <ul className="hidden md:flex items-center gap-10">
             <li>
-              <Link href="/" className={`text-gray-700 hover:text-blue-700 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
+              <Link href="/" className={`text-gray-700 hover:text-blue-500 hover:text-purple-600 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/podcasts" className={`text-gray-700 hover:text-blue-700 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
+              <Link href="/podcasts" className={`text-gray-700 hover:text-blue-500 hover:text-purple-600 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
                 Podcasts
               </Link>
             </li>
             <li>
-              <Link href="/videos" className={`text-gray-700 hover:text-blue-700 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
+              <Link href="/videos" className={`text-gray-700 hover:text-blue-500 hover:text-purple-600 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
                 Videos
               </Link>
             </li>
             <li>
-              <Link href="/photos" className={`text-gray-700 hover:text-blue-700 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
+              <Link href="/photos" className={`text-gray-700 hover:text-blue-500 hover:text-purple-600 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
                 Photos
               </Link>
             </li>
             <li>
-              <Link href="/about" className={`text-gray-700 hover:text-blue-700 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
+              <Link href="/about" className={`text-gray-700 hover:text-blue-500 hover:text-purple-600 transition-colors ${scrolled ? 'text-base' : 'text-lg md:text-xl'} font-medium`}>
                 About
               </Link>
             </li>

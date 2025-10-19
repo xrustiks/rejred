@@ -10,7 +10,11 @@ export default function Home() {
       {/* Hero Section */}
       <section className="text-center mb-12 sm:mb-16">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-gray-900">
-          Welcome to Rejection is Redirection Podcast
+          Welcome to 
+          <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+            Rejection is Redirection Podcast
+          </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
           Your source for inspiring conversations, stories, and connections.
@@ -19,13 +23,13 @@ export default function Home() {
         <div className="flex gap-4 justify-center">
           <Link
             href="/podcasts"
-            className="bg-blue-600 hover:bg-blue-400 text-gray-100 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Listen to Podcasts
           </Link>
           <Link
             href="/videos"
-            className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-white border border-blue-400 hover:bg-blue-50 text-blue-600 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Watch Videos
           </Link>
@@ -96,7 +100,7 @@ export default function Home() {
         </p>
         <Link
           href="/about"
-          className="bg-blue-600 hover:bg-blue-400 text-gray-100 px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
+          className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
         >
           Learn More About Us
         </Link>
