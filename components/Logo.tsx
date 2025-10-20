@@ -13,11 +13,11 @@ export default function Logo({ className }: LogoProps) {
   const [svgFailed, setSvgFailed] = useState(false);
   const [pngFailed, setPngFailed] = useState(false);
 
-  // Auto extract dominant color from logo.jpg to set --primary
+  // Auto extract dominant color from logo.svg to set --primary
   useEffect(() => {
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    img.src = '/images/logo.jpg';
+    img.src = '/images/logo.svg';
     img.onload = () => {
       try {
         const canvas = document.createElement('canvas');
@@ -52,7 +52,7 @@ export default function Logo({ className }: LogoProps) {
       {!jpgFailed ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src="/images/logo.jpg"
+          src="/images/logo.svg"
           alt="Rejection is Redirection Logo"
           className={common}
           onError={() => setJpgFailed(true)}
