@@ -41,8 +41,9 @@ export default function Header() {
   // Makes menu close on scroll or outside click
   useEffect(() => {
     const handleScroll = () => setOpen(false);
-    const handleClick = (e) => {
-      if (!e.target.closest("nav")) setOpen(false);
+    const handleClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      if (target && !target.closest("nav")) setOpen(false);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -54,9 +55,9 @@ export default function Header() {
     };
   }, []);
 
-  const linkClass = (href) =>
+  const linkClass = (href: string) =>
     `${
-      pathname === href ? "text-blue-500" : "text-gray-700 hover:text-blue-500"
+      pathname === href ? "text-blue-700" : "text-gray-700 hover:text-blue-700"
     } transition-colors ${
       scrolled ? "text-base" : "text-lg md:text-xl"
     } font-medium`;
