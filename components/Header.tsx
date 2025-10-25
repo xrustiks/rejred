@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
-import { usePathname } from "next/navigation"; // ✅ added
+import { usePathname } from "next/navigation";
 
 const Logo = dynamic(() => import("./Logo"), {
   ssr: false,
@@ -21,8 +21,8 @@ const Logo = dynamic(() => import("./Logo"), {
 export default function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [mounted, setMounted] = useState(false); // ✅ added
-  const pathname = usePathname(); // ✅ current route
+  const [mounted, setMounted] = useState(false);
+  const pathname = usePathname(); // current route
 
   useEffect(() => {
     setMounted(true);
