@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { usePathname } from "next/navigation";
@@ -11,9 +11,9 @@ const Logo = dynamic(() => import("./Logo"), {
     <Link
       href="/"
       className="text-xl font-bold tracking-tight text-gray-900"
-      aria-label="Rejection is Redirection Podcast Home"
+      aria-label="The Rejected Pre-Med Podcast Home"
     >
-      Rejection is Redirection
+      The Rejected Pre-Med
     </Link>
   ),
 });
@@ -23,6 +23,7 @@ export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mounted, setMounted] = useState(false);
   const pathname = usePathname(); // current route
+  const headerRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
     setMounted(true);
@@ -42,8 +43,11 @@ export default function Header() {
   useEffect(() => {
     const handleScroll = () => setOpen(false);
     const handleClick = (e: MouseEvent) => {
-      const target = e.target as HTMLElement | null;
-      if (target && !target.closest("nav")) setOpen(false);
+      const target = e.target as Node | null;
+      const container = headerRef.current;
+      if (container && target && !container.contains(target)) {
+        setOpen(false);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -67,6 +71,7 @@ export default function Header() {
 
   return (
     <header
+      ref={headerRef}
       className={`bg-white sticky top-0 z-40 border-b border-gray-100 transition-all duration-300 ${
         scrolled && !open
           ? "-translate-y-full opacity-0 pointer-events-none"
@@ -149,7 +154,6 @@ export default function Header() {
                     ? "text-blue-500"
                     : "text-gray-700 hover:text-blue-500"
                 }`}
-                onClick={() => setOpen(false)}
               >
                 {label}
               </Link>
