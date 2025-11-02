@@ -99,8 +99,7 @@ export default function Header() {
           {[
             ["/", "Home"],
             ["/podcasts", "Podcasts"],
-            ["/videos", "Videos"],
-            ["/photos", "Photos"],
+            ["/media", "Photos and Videos"],
             ["/about", "About"],
           ].map(([href, label]) => (
             <li key={href}>
@@ -142,8 +141,7 @@ export default function Header() {
             {[
               ["/", "Home"],
               ["/podcasts", "Podcasts"],
-              ["/videos", "Videos"],
-              ["/photos", "Photos"],
+              ["/media", "Photos and Videos"],
               ["/about", "About"],
             ].map(([href, label]) => (
               <li key={href}>
