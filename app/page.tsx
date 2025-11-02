@@ -25,7 +25,7 @@ export default function Home() {
             href="/podcasts"
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
           >
-            Listen to Podcasts
+            Listen to the Podcast
           </Link>
           <Link
             href="/videos"
