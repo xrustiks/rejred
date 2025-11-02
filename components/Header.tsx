@@ -128,38 +128,39 @@ export default function Header() {
             <path d="M3 6h18M3 12h18M3 18h18" />
           </svg>
         </button>
+
       </nav>
 
-      {/* Mobile menu */}
+      {/* Mobile menu below the header bar (separate line from logo) */}
       <div
-        className={`md:hidden mt-4 border-t border-gray-100 pt-4 transition-all duration-300 overflow-hidden ${
-          open
-            ? "max-h-96 opacity-100"
-            : "max-h-0 opacity-0 pointer-events-none"
+        className={`md:hidden transition-all duration-300 overflow-hidden ${
+          open ? "max-h-40 opacity-100" : "max-h-0 opacity-0 pointer-events-none"
         }`}
       >
-        <ul className="flex flex-row justify-center gap-4">
-          {[
-            ["/", "Home"],
-            ["/podcasts", "Podcasts"],
-            ["/videos", "Videos"],
-            ["/photos", "Photos"],
-            ["/about", "About"],
-          ].map(([href, label]) => (
-            <li key={href}>
-              <Link
-                href={href}
-                className={`block py-2 ${
-                  pathname === href
-                    ? "text-blue-500"
-                    : "text-gray-700 hover:text-blue-500"
-                }`}
-              >
-                {label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="container mx-auto px-4">
+          <ul className="flex flex-row justify-center gap-4">
+            {[
+              ["/", "Home"],
+              ["/podcasts", "Podcasts"],
+              ["/videos", "Videos"],
+              ["/photos", "Photos"],
+              ["/about", "About"],
+            ].map(([href, label]) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className={`block py-2 ${
+                    pathname === href
+                      ? "text-blue-500"
+                      : "text-gray-700 hover:text-blue-500"
+                  }`}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </header>
   );
