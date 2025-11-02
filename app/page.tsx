@@ -13,7 +13,7 @@ export default function Home() {
           Welcome to 
           <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
-            Rejection is Redirection Podcast
+            The Rejected Pre-Med Podcast
           </span>
         </h1>
         <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
@@ -93,7 +93,7 @@ export default function Home() {
 
       {/* About Section */}
       <section className="rounded-lg p-8 sm:p-12 text-center" style={{ background: 'var(--muted)' }}>
-        <h2 className="text-3xl font-bold mb-4">About Rejection is Redirection Podcast</h2>
+        <h2 className="text-3xl font-bold mb-4">About The Rejected Pre-Med Podcast</h2>
         <p className="text-gray-700 max-w-3xl mx-auto mb-6">
           We create meaningful content that inspires, educates, and connects people.
           Join our community and be part of conversations that matter.

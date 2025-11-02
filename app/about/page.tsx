@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <div className="container mx-auto px-4 py-12 sm:py-16 md:py-20 max-w-4xl">
       <h1 className="text-4xl sm:text-5xl font-bold text-center mb-12">
-        About Rejection is Redirection Podcast
+        About The Rejected Pre-Med Podcast
       </h1>
 
       <div className="prose prose-lg max-w-none">
@@ -21,7 +21,7 @@ export default function AboutPage() {
               <p className="text-gray-700 leading-relaxed">
                 I'm a passionate podcaster with a background in medicine. 
                 University rejection made me pivot toward my true calling—sharing 
-                stories that matter. Through <strong>Rejection is Redirection Podcast</strong>, 
+                stories that matter. Through <strong>The Rejected Pre-Med Podcast</strong>, 
                 I aim to inspire others to embrace their journeys and find strength in vulnerability.
               </p>
             </div>
@@ -33,7 +33,7 @@ export default function AboutPage() {
           <h2 className="text-3xl font-bold mb-6 text-center">Podcast Story</h2>
           <div className="space-y-6 text-gray-700 leading-relaxed">
             <p>
-              Welcome to <strong>Rejection is Redirection Podcast!</strong> 
+              Welcome to <strong>The Rejected Pre-Med Podcast!</strong> 
               This project began with a simple mission — to create meaningful 
               conversations that inspire, educate, and connect people from all walks of life.
             </p>

@@ -1,6 +1,6 @@
 # Content Creation Guide
 
-This guide will help you create and manage podcast episodes, videos, and photos for your Rejection is Redirection Podcast website.
+This guide will help you create and manage podcast episodes, videos, and photos for your The Rejected Pre-Med Podcast website.
 
 ## 📝 Creating Podcast Episodes
 

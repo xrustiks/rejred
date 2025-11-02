@@ -1,4 +1,4 @@
-# Rejection is Redirection Podcast Website
+# The Rejected Pre-Med Podcast Website
 
 A modern podcast website built with Next.js, featuring audio podcasts, video content, and photo galleries. Optimized for static export and deployment to Bluehost.
 
@@ -90,7 +90,7 @@ Video description here.
 ## 📁 Project Structure
 
 ```
-Rejection is Redirection/
+The Rejected Pre-Med/
 ├── app/              # Pages and routes
 ├── components/       # React components
 ├── content/          # Your podcast/video MDX files

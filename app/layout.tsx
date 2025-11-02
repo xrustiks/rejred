@@ -12,8 +12,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Rejection is Redirection Podcast - Audio, Video & More",
-  description: "Welcome to Rejection is Redirection Podcast - Your source for inspiring conversations, video podcasts, and exclusive content.",
+  title: "The Rejected Pre-Med Podcast - Audio, Video & More",
+  description: "Welcome to The Rejected Pre-Med Podcast - Your source for inspiring conversations, video podcasts, and exclusive content.",
 };
 
 export default function RootLayout({

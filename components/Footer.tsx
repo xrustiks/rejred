@@ -11,7 +11,7 @@ export default function Footer() {
 
           {/* About */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Rejection is Redirection Podcast</h3>
+            <h3 className="text-xl font-bold mb-4">The Rejected Pre-Med Podcast</h3>
             <p className="text-gray-400">
               Your source for inspiring conversations and stories.
             </p>
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Rejection is Redirection Podcast. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} The Rejected Pre-Med Podcast. All rights reserved.</p>
         </div>
       </div>
     </footer>

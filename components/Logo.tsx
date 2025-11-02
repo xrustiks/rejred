@@ -48,12 +48,12 @@ export default function Logo({ className }: LogoProps) {
   const common = "w-auto h-full";
 
   return (
-  <Link href="/" className={`flex items-center gap-3 ${className ?? 'h-8'}`} aria-label="Rejection is Redirection Podcast Home">
+  <Link href="/" className={`flex items-center gap-3 ${className ?? 'h-8'}`} aria-label="The Rejected Pre-Med Podcast Home">
       {!jpgFailed ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src="/images/logo.svg"
-          alt="Rejection is Redirection Logo"
+          alt="The Rejected Pre-Med Logo"
           className={common}
           onError={() => setJpgFailed(true)}
         />
@@ -61,7 +61,7 @@ export default function Logo({ className }: LogoProps) {
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src="/images/logo.svg"
-          alt="Rejection is Redirection Logo"
+          alt="The Rejected Pre-Med Logo"
           className={common}
           onError={() => setSvgFailed(true)}
         />
@@ -69,12 +69,12 @@ export default function Logo({ className }: LogoProps) {
         // eslint-disable-next-line @next/next/no-img-element
         <img
           src="/images/logo.png"
-          alt="Rejection is Redirection Logo"
+          alt="The Rejected Pre-Med Logo"
           className={common}
           onError={() => setPngFailed(true)}
         />
       ) : (
-        <span className="text-xl font-bold tracking-tight text-foreground">Rejection is Redirection</span>
+        <span className="text-xl font-bold tracking-tight text-foreground">The Rejected Pre-Med</span>
       )}
     </Link>
   );

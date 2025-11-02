@@ -43,7 +43,7 @@ export default function PhotosPage() {
         </p>
         <div className="flex gap-4 justify-center">
           <a href="#" className="[color:var(--primary)] hover:brightness-110 font-semibold">
-            #Rejection is RedirectionPodcast
+            #The Rejected Pre-MedPodcast
           </a>
         </div>
       </div>
