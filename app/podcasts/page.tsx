@@ -1,7 +1,7 @@
 export default function PodcastsPage() {
   return (
     <div className="container mx-auto px-4 py-10 sm:py-12 md:py-16">
-      <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">All Podcast Episodes</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Podcasts</h1>
       <p className="text-gray-600 mb-4 sm:mb-6">
         Full episode list and show notes are available via RSS
       </p>

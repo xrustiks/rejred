@@ -79,27 +79,28 @@ export default function Header() {
       }`}
     >
       <nav
-        className={`container mx-auto px-4 flex items-center justify-between transition-[padding] duration-300 
-          ${scrolled ? "py-3" : "py-6 md:py-8"} 
-          md:flex-col lg:flex-row`}
+        className={`container mx-auto px-4 flex flex-col items-center transition-[padding] duration-300 ${
+          scrolled ? "py-3" : "py-6 md:py-8"
+        }`}
       >
         {/* Logo (stacks above nav on medium screens) */}
         <div
-          className={`transition-all duration-300 mb-0 md:mb-6 lg:mb-0 ${
-            scrolled
-              ? "opacity-0 pointer-events-none -translate-y-2"
-              : "opacity-100"
+          className={`transition-all duration-300 mb-4 md:mb-6 ${
+            scrolled ? "opacity-0 pointer-events-none -translate-y-2" : "opacity-100"
           }`}
         >
-          <Logo className="h-28 md:h-36 w-auto flex-shrink-0" />
+          <Logo className="h-28 md:h-36 w-auto flex-shrink-0 mx-auto" />
         </div>
 
-        {/* Desktop nav */}
-        <ul className="hidden md:flex items-center gap-10">
+    {/* Desktop nav */}
+  <ul className="hidden md:flex items-center gap-10 justify-center flex-wrap lg:flex-nowrap">
           {[
             ["/", "Home"],
             ["/podcasts", "Podcasts"],
             ["/media", "Photos and Videos"],
+            ["/events", "Events"],
+            ["/press", "Press & Interviews"],
+            ["/support", "Support & Resources"],
             ["/about", "About"],
           ].map(([href, label]) => (
             <li key={href}>
@@ -137,11 +138,14 @@ export default function Header() {
         }`}
       >
         <div className="container mx-auto px-4">
-          <ul className="flex flex-row justify-center gap-4">
+          <ul className="flex flex-row justify-center gap-4 flex-wrap">
             {[
               ["/", "Home"],
               ["/podcasts", "Podcasts"],
               ["/media", "Photos and Videos"],
+              ["/events", "Events"],
+              ["/press", "Press & Interviews"],
+              ["/support", "Support & Resources"],
               ["/about", "About"],
             ].map(([href, label]) => (
               <li key={href}>
