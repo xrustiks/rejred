@@ -16,7 +16,7 @@ export default function MediaPage() {
           className="text-blue-600 hover:text-blue-700 underline"
         >
           @the_rejectedpremed_podcast
-        </a>.
+        </a>
       </p>
 
       <a
