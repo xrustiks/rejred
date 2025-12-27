@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #e0f2fe; /* sky-100 - light blue */
   --foreground: #171717;
   --primary: #0ea5e9; /* sky-500 */
   --primary-foreground: #ffffff;
-  --muted: #f3f4f6; /* gray-100 */
-  --border: #e5e7eb; /* gray-200 */
+  --muted: #bae6fd; /* sky-200 */
+  --border: #7dd3fc; /* sky-300 */
 }
 
 /* Dark mode disabled: site is always light */

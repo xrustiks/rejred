@@ -72,7 +72,7 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className={`bg-white sticky top-0 z-40 border-b border-gray-100 transition-all duration-300 ${
+      className={`bg-sky-50 sticky top-0 z-40 border-b border-sky-300 transition-all duration-300 ${
         scrolled && !open
           ? "-translate-y-full opacity-0 pointer-events-none"
           : "translate-y-0 opacity-100"

@@ -20,7 +20,7 @@ export default function PressPage() {
       >
         <div
           className="h-48 flex items-center justify-center"
-          style={{ background: `linear-gradient(135deg, var(--primary), #7c3aed)` }}
+          style={{ background: `linear-gradient(135deg, var(--primary), #0284c7)` }}
         >
           <svg
             className="w-16 h-16 text-white"

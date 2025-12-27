@@ -24,7 +24,7 @@ export default function AuthorPage() {
         {/* Contact Section */}
         <section
           className="rounded-2xl p-10 sm:p-14 text-center shadow-lg text-white"
-          style={{ background: 'linear-gradient(135deg, var(--primary), #7c3aed)' }}
+          style={{ background: 'linear-gradient(135deg, var(--primary), #0284c7)' }}
         >
           <h2 className="text-3xl font-bold mb-4">Connect with Valeria</h2>
           <p className="text-gray-100 mb-8 mx-auto">

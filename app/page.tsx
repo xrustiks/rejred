@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 text-gray-900">
           Welcome to 
           <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
             The Rejected Pre-Med Podcast
           </span>
         </h1>
@@ -23,7 +23,7 @@ export default function Home() {
         <div className="flex gap-4 justify-center">
           <Link
             href="/podcasts"
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
+            className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
           >
             Listen to the Podcast
           </Link>
@@ -51,7 +51,7 @@ export default function Home() {
               href={`/podcasts/${episode.slug}`}
               className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
             >
-              <div className="h-48" style={{ background: `linear-gradient(135deg, var(--primary), #7c3aed)` }}></div>
+              <div className="h-48" style={{ background: `linear-gradient(135deg, var(--primary), #0284c7)` }}></div>
               <div className="p-6">
                 <h3 className="font-semibold text-lg mb-2">{episode.title}</h3>
                 <p className="text-gray-600 text-sm mb-4">{episode.description}</p>
@@ -100,7 +100,7 @@ export default function Home() {
         </p>
         <Link
           href="/about"
-          className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
+          className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white px-6 sm:px-8 py-3 rounded-lg font-semibold transition-colors"
         >
           Learn More About Us
         </Link>
