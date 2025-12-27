@@ -16,7 +16,7 @@ export default function Home() {
             The Rejected Pre-Med Podcast
           </span>
         </h1>
-        <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8 mx-auto">
           Your source for inspiring conversations, stories, and connections.
           Join us as we explore topics that matter.
         </p>

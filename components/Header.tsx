@@ -101,7 +101,7 @@ export default function Header() {
             ["/events", "Events"],
             ["/press", "Press & Interviews"],
             ["/support", "Support & Resources"],
-            ["/about", "About"],
+            ["/about", "Author"],
           ].map(([href, label]) => (
             <li key={href}>
               <Link href={href} className={linkClass(href)}>
@@ -146,7 +146,7 @@ export default function Header() {
               ["/events", "Events"],
               ["/press", "Press & Interviews"],
               ["/support", "Support & Resources"],
-              ["/about", "About"],
+              ["/about", "Author"],
             ].map(([href, label]) => (
               <li key={href}>
                 <Link

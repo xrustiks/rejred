@@ -1,17 +1,16 @@
-export default function AboutPage() {
+export default function AuthorPage() {
   return (
     <div className="container mx-auto px-4 py-12 sm:py-16 md:py-20 max-w-4xl">
-      <h1 className="text-4xl sm:text-5xl font-bold text-center mb-12">
-        About The Rejected Pre-Med Podcast
-      </h1>
+      <h1 className="text-4xl sm:text-5xl font-bold text-center mb-12">Author</h1>
 
       <div className="prose prose-lg max-w-none">
         {/* Author Section */}
         <section className="mb-16">
           <h2 className="text-3xl font-bold mb-8 text-center">About the Author</h2>
-          <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
+          <div className="md:overflow-hidden">
             <div
-              className="w-40 h-40 sm:w-48 sm:h-48 rounded-full flex-shrink-0 shadow-lg" style={{ background: 'url(/images/valeria-rusnak.png) center/cover' }}
+              className="w-40 h-40 sm:w-88 sm:h-88 rounded-full shadow-lg mx-auto mb-6 md:float-left md:mr-8 md:mb-4"
+              style={{ background: 'url(/images/valeria-rusnak.png) center/cover' }}
             ></div>
             <div className="text-center md:text-left">
               <h3 className="text-2xl font-semibold mb-3">Valeria Rusnak</h3>
@@ -46,16 +45,48 @@ export default function AboutPage() {
           className="rounded-2xl p-10 sm:p-14 text-center shadow-lg text-white"
           style={{ background: 'linear-gradient(135deg, var(--primary), #7c3aed)' }}
         >
-          <h2 className="text-3xl font-bold mb-4">Get In Touch</h2>
-          <p className="text-gray-100 mb-8 max-w-2xl mx-auto">
-            Have a story to share or want to be a guest on the show?
+          <h2 className="text-3xl font-bold mb-4">Connect with Valeria</h2>
+          <p className="text-gray-100 mb-8 mx-auto">
+            Have a story to share, want to be a guest, or need support? Reach out through any of the channels below.
           </p>
-          <a
-            href="mailto:hello@rejectionisredirection.com"
-            className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold transition-colors"
-          >
-            Contact Us
-          </a>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto mb-6">
+            <a
+              href="mailto:valerusu55@gmail.com"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Email
+            </a>
+            <a
+              href="https://instagram.com/the_rejectedpremed_podcast"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://www.linkedin.com/in/valeria-rusnak"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://www.buymeacoffee.com/valeriarusnak"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Support the Show
+            </a>
+            <a
+              href="https://calendly.com/valerusu55"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Book a Meeting
+            </a>
+            <a
+              href="https://rss.com/podcasts/rejected-premed/"
+              className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              RSS Link
+            </a>
+          </div>
         </section>
       </div>
     </div>

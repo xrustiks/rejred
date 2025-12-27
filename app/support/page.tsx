@@ -7,11 +7,11 @@ export default function SupportPage() {
   return (
     <div className="container mx-auto px-4 py-10 sm:py-12 md:py-16">
       <h1 className="text-3xl sm:text-4xl font-bold mb-4">Support & Resources</h1>
-      <p className="text-gray-600 mb-6 max-w-2xl">
+      <p className="text-gray-600 mb-6">
         Here you'll find recommended books, articles and practical resources on mental health, dealing with rejection, and personal growth.
       </p>
 
-      <section className="mt-6 grid gap-6 max-w-2xl">
+      <section className="mt-6 grid gap-6">
         <div>
           <h2 className="font-semibold">Recommended Books</h2>
           <ul className="list-disc list-inside text-gray-700 mt-2">
