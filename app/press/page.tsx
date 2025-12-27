@@ -11,9 +11,33 @@ export default function PressPage() {
         A curated list of press coverage, guest appearances and interviews. You can also find many mentions on our Instagram page.
       </p>
 
-      <p className="text-gray-500">For the latest mentions and clips, see{' '}
-        <a href="https://www.instagram.com/the_rejectedpremed_podcast/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">@the_rejectedpremed_podcast</a>.
-      </p>
+      {/* Card-styled CTA matching Podcasts page */}
+      <a
+        href="https://www.instagram.com/the_rejectedpremed_podcast/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow block max-w-xl mx-auto"
+      >
+        <div
+          className="h-48 flex items-center justify-center"
+          style={{ background: `linear-gradient(135deg, var(--primary), #7c3aed)` }}
+        >
+          <svg
+            className="w-16 h-16 text-white"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M12 2C7.58 2 4 5.58 4 10v4c0 4.42 3.58 8 8 8s8-3.58 8-8v-4C20 5.58 16.42 2 12 2zm0 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm6-1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+        </div>
+        <div className="p-6">
+          <h2 className="font-semibold text-xl mb-2">Follow on Instagram</h2>
+          <p className="text-gray-600">
+            Latest mentions and clips: <span className="font-medium">@the_rejectedpremed_podcast</span>
+          </p>
+        </div>
+      </a>
     </div>
   );
 }

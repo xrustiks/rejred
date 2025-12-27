@@ -21,25 +21,6 @@ export default function AuthorPage() {
           </div>
         </section>
 
-        {/* Podcast Story Section */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold mb-6 text-center">Podcast Story</h2>
-          <div className="space-y-6 text-gray-700 leading-relaxed">
-            <p>
-              Welcome to <strong>The Rejected Pre-Med Podcast!</strong> 
-              This project began with a simple mission — to create meaningful 
-              conversations that inspire, educate, and connect people from all walks of life.
-            </p>
-
-            <p>
-              What started as a personal passion has grown into a community of listeners 
-              who share the same challenges and triumphs. Through authentic storytelling 
-              and honest discussions, we aim to empower you to embrace your own journey 
-              of rejection and redirection.
-            </p>
-          </div>
-        </section>
-
         {/* Contact Section */}
         <section
           className="rounded-2xl p-10 sm:p-14 text-center shadow-lg text-white"
@@ -69,22 +50,10 @@ export default function AuthorPage() {
               LinkedIn
             </a>
             <a
-              href="https://www.buymeacoffee.com/valeriarusnak"
-              className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
-            >
-              Support the Show
-            </a>
-            <a
               href="https://calendly.com/valerusu55"
               className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
             >
               Book a Meeting
-            </a>
-            <a
-              href="https://rss.com/podcasts/rejected-premed/"
-              className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
-            >
-              RSS Link
             </a>
           </div>
         </section>

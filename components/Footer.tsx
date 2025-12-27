@@ -33,10 +33,13 @@ export default function Footer() {
                 open.links ? "block" : "hidden md:block"
               }`}
             >
+              <li><a href="/" className="text-gray-400 hover:[color:var(--primary)]">Home</a></li>
               <li><a href="/podcasts" className="text-gray-400 hover:[color:var(--primary)]">Podcasts</a></li>
-              <li><a href="/videos" className="text-gray-400 hover:[color:var(--primary)]">Videos</a></li>
-              <li><a href="/photos" className="text-gray-400 hover:[color:var(--primary)]">Photos</a></li>
-              <li><a href="/about" className="text-gray-400 hover:[color:var(--primary)]">About</a></li>
+              <li><a href="/media" className="text-gray-400 hover:[color:var(--primary)]">Photos and Videos</a></li>
+              <li><a href="/events" className="text-gray-400 hover:[color:var(--primary)]">Events</a></li>
+              <li><a href="/press" className="text-gray-400 hover:[color:var(--primary)]">Press & Interviews</a></li>
+              <li><a href="/support" className="text-gray-400 hover:[color:var(--primary)]">Support & Resources</a></li>
+              <li><a href="/about" className="text-gray-400 hover:[color:var(--primary)]">Author</a></li>
             </ul>
           </div>
 
@@ -56,10 +59,11 @@ export default function Footer() {
                 open.connect ? "block" : "hidden md:block"
               }`}
             >
-              <li><a href="#" className="text-gray-400 hover:text-white">Instagram</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">YouTube</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Twitter</a></li>
-              <li><a href="mailto:hello@RejectionisRedirection.com" className="text-gray-400 hover:text-white">Email</a></li>
+              <li><a href="mailto:valerusu55@gmail.com" className="text-gray-400 hover:text-white">Email</a></li>
+              <li><a href="https://instagram.com/the_rejectedpremed_podcast" className="text-gray-400 hover:text-white">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/in/valeria-rusnak" className="text-gray-400 hover:text-white">LinkedIn</a></li>
+              <li><a href="https://www.buymeacoffee.com/valeriarusnak" className="text-gray-400 hover:text-white">Support</a></li>
+              <li><a href="https://calendly.com/valerusu55" className="text-gray-400 hover:text-white">Calendly</a></li>
             </ul>
           </div>
         </div>
