@@ -80,7 +80,7 @@ export default function Home() {
               href="/about"
               className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white px-8 py-3 rounded-xl font-semibold transition-all hover:shadow-lg hover:-translate-y-1 w-fit"
             >
-              Full Bio & Contact
+              More about the author
             </Link>
           </div>
         </div>
