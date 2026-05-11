@@ -63,7 +63,8 @@ export default function Header() {
     `${
       pathname === href ? "text-blue-700" : "text-gray-700 hover:text-blue-700"
     } transition-colors ${
-      scrolled ? "text-base" : "text-lg md:text-xl"
+      /* Keep font-size stable to avoid layout shifts on scroll */
+      "text-lg md:text-xl"
     } font-medium`;
 
   // ✅ Prevent SSR mismatch
@@ -78,15 +79,12 @@ export default function Header() {
           : "translate-y-0 opacity-100"
       }`}
     >
-      <nav
-        className={`container mx-auto px-4 flex flex-col items-center transition-[padding] duration-300 ${
-          scrolled ? "py-3" : "py-6 md:py-8"
-        }`}
-      >
+      <nav className={`container mx-auto px-4 flex flex-col items-center py-6 md:py-8 transition-all duration-300`}>
         {/* Logo (stacks above nav on medium screens) */}
         <div
-          className={`transition-all duration-300 mb-4 md:mb-6 ${
-            scrolled ? "opacity-0 pointer-events-none -translate-y-2" : "opacity-100"
+          className={`transition-opacity duration-300 mb-4 md:mb-6 ${
+            /* Only animate opacity to avoid shifting layout height */
+            scrolled ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         >
           <Logo className="h-28 md:h-36 w-auto flex-shrink-0 mx-auto" />

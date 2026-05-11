@@ -54,15 +54,19 @@ export default function Home() {
             </div>
             
             <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-gray-900 leading-tight">
-              Speaker, Consultant & Mental Health Advocate
+              Speaker, Host & Mental Health Advocate
             </h2>
             
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Valeria is available to collaborate as a Rejections and Resilience Speaker and a Rejections/Pre-Med Consultant, with a bachelor's degree in neuroscience from the University of Lethbridge and a foundational certificate in Narrative-Based Medicine from the University of Toronto.
+              Valeria is available to collaborate as a Rejection and Resilience Speaker. She brings an academic foundation in neuroscience, Community Helpers training and is currently completing her Master of Management at the University of Calgary.
             </p>
             
             <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              She hosts 1:1 consultations to support pre-med students and individuals processing rejection, offering actionable strategies to help them move forward. She is also currently working towards receiving a Master of Management (Business Degree) from the Haskayne School of Business at the University of Calgary. 
+              If you are looking for a dynamic and thoughtful speaker whose delivery has been described as engaging, authentic, and impactful, and who consistently receives positive feedback from audiences, Valeria would be honored to collaborate.
+              How do we build confidence when facing rejection? How do we become resilient in moments that challenge our identity, direction, or self-worth? These are not topics commonly taught in school curriculums — yet they are experiences nearly everyone will face.
+              Whether speaking to a health and wellness class, a student leadership initiative, or your organization, Valeria shares research-informed insights paired with lived experience and practical tools.
+              Rejection can feel deeply personal — but it can also be redirection. It can be an invitation to reflect, recalibrate, and grow — if we are willing to see it that way.
+              For speaking inquiries and collaborations, please contact Valeria. 
 
             </p>
 
