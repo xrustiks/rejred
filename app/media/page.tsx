@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function MediaPage() {
   return (
-    <div className="container mx-auto px-4 py-10 sm:py-12 md:py-16">
+    <div className="container mx-auto px-8 sm:px-12 lg:px-16 py-10 sm:py-12 md:py-16">
       <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Photos and Videos</h1>
       <p className="text-gray-600 mb-8 sm:mb-12">
         You can find photos and videos on Instagram at{' '}

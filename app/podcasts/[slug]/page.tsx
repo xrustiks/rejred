@@ -22,7 +22,7 @@ export default async function EpisodePage({ params }: PageProps) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-10 sm:py-12 md:py-16 max-w-4xl">
+    <div className="container mx-auto px-8 sm:px-12 lg:px-16 py-10 sm:py-12 md:py-16 max-w-4xl">
       <div className="mb-8">
         <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">{episode.title}</h1>
         <div className="flex flex-wrap gap-2 sm:gap-4 text-gray-600 mb-4 sm:mb-6">

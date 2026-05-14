@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function EventsPage() {
   return (
-    <div className="container mx-auto px-4 py-10 sm:py-12 md:py-16">
+    <div className="container mx-auto px-8 sm:px-12 lg:px-16 py-10 sm:py-12 md:py-16">
       <h1 className="text-3xl sm:text-4xl font-bold mb-4">Events</h1>
       <p className="text-gray-600 mb-6">
         This page will list upcoming events, meetups, live recordings and public appearances. 

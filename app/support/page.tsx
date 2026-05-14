@@ -5,18 +5,18 @@ export const metadata = {
 
 export default function SupportPage() {
   return (
-    <div className="container mx-auto px-4 py-10 sm:py-12 md:py-16 max-w-6xl">
-      <h1 className="text-3xl sm:text-4xl font-bold mb-4">Support & Resources</h1>
-      <p className="text-gray-600 mb-12">
+    <div className="container mx-auto px-8 sm:px-12 lg:px-16 py-10 sm:py-12 md:py-16">
+      <h1 className="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4">Support & Resources</h1>
+      <p className="text-gray-600 mb-8 sm:mb-12">
         Discover valuable resources for resilience, mental wellness, and personal growth.
       </p>
 
       {/* Recommended Resources Section */}
-      <section className="mb-16">
+      <section className="mb-12 sm:mb-16 mx-auto max-w-4xl text-center">
         <h2 className="text-3xl font-bold mb-8 text-gray-900">Recommended Resources</h2>
 
         {/* Recommended Books */}
-        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-sky-100 mb-8">
+        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-sky-100 mb-8 text-left">
           <h3 className="text-xl font-bold text-gray-900 mb-4">📚 Recommended Books</h3>
           <ul className="space-y-3">
             <li className="text-gray-700">
@@ -32,7 +32,7 @@ export default function SupportPage() {
         </div>
 
         {/* Resources Mentioned */}
-        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-sky-100 mb-8">
+        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-sky-100 mb-8 text-left">
           <h3 className="text-xl font-bold text-gray-900 mb-4">🔗 Resources Mentioned</h3>
           <ul className="space-y-3">
             <li>
@@ -57,7 +57,7 @@ export default function SupportPage() {
         </div>
 
         {/* More on Rejection Sensitivity */}
-        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-sky-100 mb-8">
+        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-sky-100 mb-8 text-left">
           <h3 className="text-xl font-bold text-gray-900 mb-4">💡 More on Rejection Sensitivity</h3>
           <ul className="space-y-3">
             <li>
@@ -82,7 +82,7 @@ export default function SupportPage() {
         </div>
 
         {/* Our Guests' Resources */}
-        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-sky-100 mb-8">
+        <div className="bg-white rounded-xl p-6 sm:p-8 shadow-md border border-sky-100 mb-8 text-left">
           <h3 className="text-xl font-bold text-gray-900 mb-4">🎙️ Our Guests' Resources</h3>
           
           <div className="space-y-6">
@@ -157,9 +157,9 @@ export default function SupportPage() {
       </section>
 
       {/* Support CTA - Moved to Bottom */}
-      <section className="mt-16">
-        <h2 className="text-3xl font-bold mb-8 text-gray-900">Support the Podcast</h2>
-        <p className="text-gray-600 mb-8">
+      <section className="mt-12 sm:mt-16 text-center mx-auto max-w-4xl">
+        <h2 className="text-3xl font-bold mb-4 sm:mb-8 text-gray-900">Support the Podcast</h2>
+        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
           If you'd like to support Valeria and the podcast, consider buying a coffee. Your support helps keep the mission going!
         </p>
         <a
