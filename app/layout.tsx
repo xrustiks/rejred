@@ -12,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "The Rejected Pre-Med Podcast - Audio, Video & More",
+  title: "The Rejected Pre-Med Podcast - Your source for inspiration and growth",
   description: "Welcome to The Rejected Pre-Med Podcast - Your source for inspiring conversations, video podcasts, and exclusive content.",
 };
 
