@@ -1,3 +1,5 @@
+import EmailContact from "@/components/EmailContact";
+
 export default function AuthorPage() {
   return (
     <div className="container mx-auto px-4 py-12 sm:py-16 md:py-20 max-w-4xl">
@@ -30,12 +32,11 @@ export default function AuthorPage() {
             Have a story to share or would like to collaborate with Valeria? Reach out through any of the channels below:
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl mx-auto mb-6">
-            <a
-              href="mailto:valerusu55@gmail.com"
+            <EmailContact
+              email="valerusu55@gmail.com"
+              label="Email"
               className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
-            >
-              Email
-            </a>
+            />
             <a
               href="https://instagram.com/the_rejectedpremed_podcast"
               className="bg-white text-gray-900 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition-colors"
