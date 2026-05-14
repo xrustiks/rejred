@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
   <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-sky-50">
-    <div className="container mx-auto px-4 py-10 sm:py-16 md:py-20">
+    <div className="container mx-auto px-8 sm:px-12 lg:px-16 py-10 sm:py-16 md:py-20">
       {/* Hero Section - Enhanced */}
       <section className="text-center mb-16 sm:mb-20 md:mb-24">
         <div className="mb-8">
@@ -36,9 +36,9 @@ export default function Home() {
 
       {/* About Valeria Section - Enhanced Layout */}
       <section className="mb-16 sm:mb-20 md:mb-24 py-16 sm:py-20">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
           {/* Image */}
-          <div className="order-2 md:order-1 flex items-center">
+          <div className="order-2 lg:order-1 flex items-center">
             <div 
               className="rounded-2xl shadow-2xl overflow-hidden w-full aspect-square hover:shadow-3xl transition-shadow"
               style={{ background: `url(/images/main-photo.jpg) center/cover` }}
@@ -46,7 +46,7 @@ export default function Home() {
           </div>
           
           {/* Text Content */}
-          <div className="order-1 md:order-2 flex flex-col justify-center">
+          <div className="order-1 lg:order-2 flex flex-col justify-center">
             <div className="inline-block mb-4">
               <span className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
                 Meet Valeria Rusnak
