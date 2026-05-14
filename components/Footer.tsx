@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import EmailContact from "./EmailContact";
 
 export default function Footer() {
   const [open, setOpen] = useState({ links: false, connect: false });
@@ -59,7 +60,7 @@ export default function Footer() {
                 open.connect ? "block" : "hidden md:block"
               }`}
             >
-              <li><a href="mailto:valerusu55@gmail.com" className="text-sky-100 hover:text-white">Email</a></li>
+              <li><EmailContact email="valerusu55@gmail.com" label="Email" className="text-sky-100 hover:text-white" /></li>
               <li><a href="https://instagram.com/the_rejectedpremed_podcast" className="text-sky-100 hover:text-white">Instagram</a></li>
               <li><a href="https://www.linkedin.com/in/valeria-rusnak" className="text-sky-100 hover:text-white">LinkedIn</a></li>
               <li><a href="https://www.buymeacoffee.com/valeriarusnak" className="text-sky-100 hover:text-white">Support</a></li>
