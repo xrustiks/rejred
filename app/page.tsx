@@ -75,7 +75,7 @@ export default function Home() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Calgary</div>
                 <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Lethbridge</div>
-                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> North Trail High School</div>
+                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> Foothills school division and Calgary Board of Education member schools</div>
                 <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> General Mills</div>
               </div>
             </div>
