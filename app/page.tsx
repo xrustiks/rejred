@@ -7,11 +7,11 @@ export default function Home() {
       {/* Hero Section - Enhanced */}
       <section className="text-center mb-16 sm:mb-20 md:mb-24">
         <div className="mb-8">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 sm:mb-6 text-gray-900 leading-tight">
-            Rejection is
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
+            <span className="text-gray-900">The Rejected Pre-Med</span>
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-cyan-500">
-              Redirection
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-sky-400">
+              Podcast
             </span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 mx-auto max-w-2xl leading-relaxed">
