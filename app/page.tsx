@@ -36,17 +36,27 @@ export default function Home() {
 
       {/* About Valeria Section - Enhanced Layout */}
       <section className="mb-16 sm:mb-20 md:mb-24 py-16 sm:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Image */}
-          <div className="order-2 lg:order-1 flex items-center">
+          <div className="order-2 lg:order-1 flex flex-col">
             <div 
-              className="rounded-2xl shadow-2xl overflow-hidden w-full aspect-square hover:shadow-3xl transition-shadow"
+              className="rounded-2xl shadow-2xl overflow-hidden w-full aspect-square hover:shadow-3xl transition-shadow mb-8"
               style={{ background: `url(/images/reachouttogether.jpeg) center/cover` }}
             />
+            
+            <div className="bg-sky-50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500">
+              <h3 className="text-lg font-bold text-gray-900 mb-4">Recent Speaking Venues</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Calgary</div>
+                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Lethbridge</div>
+                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> Foothills school division and Calgary Board of Education member schools</div>
+                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> General Mills</div>
+              </div>
+            </div>
           </div>
           
           {/* Text Content */}
-          <div className="order-1 lg:order-2 flex flex-col justify-center">
+          <div className="order-1 lg:order-2 flex flex-col justify-start">
             <div className="inline-block mb-4">
               <span className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
                 Meet Valeria Rusnak
@@ -69,16 +79,6 @@ export default function Home() {
               For speaking inquiries and collaborations, please contact Valeria. 
 
             </p>
-
-            <div className="bg-sky-50 rounded-xl p-6 sm:p-8 mb-8 border-l-4 border-blue-500">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Recent Speaking Venues</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Calgary</div>
-                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Lethbridge</div>
-                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> Foothills school division and Calgary Board of Education member schools</div>
-                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> General Mills</div>
-              </div>
-            </div>
 
             <Link
               href="/about"
