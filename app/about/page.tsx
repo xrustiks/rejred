@@ -11,8 +11,8 @@ export default function AuthorPage() {
           <h2 className="text-3xl font-bold mb-8 text-center">About this mission</h2>
           <div className="md:overflow-hidden">
             <div
-              className="w-40 h-40 sm:w-88 sm:h-88 rounded-full shadow-lg mx-auto mb-6 md:float-left md:mr-8 md:mb-4"
-              style={{ background: 'url(/images/valeria-rusnak.png) center/cover' }}
+              className="w-40 h-40 sm:w-88 sm:h-88 shadow-lg mx-auto mb-6 md:float-left md:mr-8 md:mb-4"
+              style={{ background: 'url(/images/badges.jpeg) center/cover' }}
             ></div>
             <div className="text-center md:text-left">
               <p className="text-gray-700 leading-relaxed">

@@ -41,7 +41,7 @@ export default function Home() {
           <div className="order-2 lg:order-1 flex items-center">
             <div 
               className="rounded-2xl shadow-2xl overflow-hidden w-full aspect-square hover:shadow-3xl transition-shadow"
-              style={{ background: `url(/images/main-photo.jpg) center/cover` }}
+              style={{ background: `url(/images/reachouttogether.jpeg) center/cover` }}
             />
           </div>
           
