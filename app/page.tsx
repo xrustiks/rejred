@@ -3,9 +3,9 @@ import Link from "next/link";
 export default function Home() {
   return (
   <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-sky-50">
-    <div className="container mx-auto px-8 sm:px-12 lg:px-16 py-10 sm:py-16 md:py-20">
+    <div className="container mx-auto px-24 sm:px-36 lg:px-48 py-10 sm:py-16 md:py-20">
       {/* Hero Section - Enhanced */}
-      <section className="text-center mb-16 sm:mb-20 md:mb-24">
+      <section className="text-center mb-8 sm:mb-10 md:mb-12">
         <div className="mb-8">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
             <span className="text-gray-900">The Rejected Pre-Med</span>
@@ -35,28 +35,18 @@ export default function Home() {
       </section>
 
       {/* About Valeria Section - Enhanced Layout */}
-      <section className="mb-16 sm:mb-20 md:mb-24 py-16 sm:py-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-          {/* Image */}
-          <div className="order-2 lg:order-1 flex flex-col">
+      <section className="mb-2 sm:mb-3 md:mb-4 py-8 sm:py-10">
+        <div className="overflow-hidden">
+          {/* Image - Desktop only (keeps wrap effect) */}
+          <div className="hidden lg:block float-left lg:w-1/2 lg:mr-8 mb-6 lg:mb-0">
             <div 
-              className="rounded-2xl shadow-2xl overflow-hidden w-full aspect-square hover:shadow-3xl transition-shadow mb-8"
+              className="rounded-2xl shadow-2xl overflow-hidden w-full aspect-square hover:shadow-3xl transition-shadow"
               style={{ background: `url(/images/reachouttogether.jpeg) center/cover` }}
             />
-            
-            <div className="bg-sky-50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500">
-              <h3 className="text-lg font-bold text-gray-900 mb-4">Recent Speaking Venues</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Calgary</div>
-                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Lethbridge</div>
-                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> Foothills school division and Calgary Board of Education member schools</div>
-                <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> General Mills</div>
-              </div>
-            </div>
           </div>
           
-          {/* Text Content */}
-          <div className="order-1 lg:order-2 flex flex-col justify-start">
+          {/* Text Content - Wraps around image */}
+          <div>
             <div className="inline-block mb-4">
               <span className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
                 Meet Valeria Rusnak
@@ -86,6 +76,25 @@ export default function Home() {
             >
               More about the author
             </Link>
+          </div>
+
+          {/* Image - Mobile only (after text, before venues) */}
+          <div className="lg:hidden w-full mt-6">
+            <div 
+              className="rounded-2xl shadow-2xl overflow-hidden w-full aspect-square hover:shadow-3xl transition-shadow"
+              style={{ background: `url(/images/reachouttogether.jpeg) center/cover` }}
+            />
+          </div>
+        </div>
+
+        {/* Recent Speaking Venues - Full Width */}
+        <div className="bg-sky-50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500 mt-12">
+          <h3 className="text-lg font-bold text-gray-900 mb-4">Recent Speaking Venues</h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Calgary</div>
+            <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Lethbridge</div>
+            <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> Foothills school division and Calgary Board of Education member schools</div>
+            <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> General Mills</div>
           </div>
         </div>
       </section>
