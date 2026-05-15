@@ -7,9 +7,41 @@ export default function PressPage() {
   return (
     <div className="container mx-auto px-8 sm:px-12 lg:px-16 py-10 sm:py-12 md:py-16">
       <h1 className="text-3xl sm:text-4xl font-bold mb-4">Press & Interviews</h1>
-      <p className="text-gray-600 mb-6">
+      <p className="text-gray-600 mb-12">
         A curated list of press coverage, guest appearances and interviews. You can also find many mentions on our Instagram page.
       </p>
+
+      {/* Recognition Section */}
+      <section className="mb-16">
+        <h2 className="text-2xl font-bold mb-6 text-gray-900">Recognition & Awards</h2>
+        <div className="bg-white rounded-lg shadow-md overflow-hidden p-8">
+          <div className="flex flex-col lg:flex-row items-center gap-8">
+            <div className="flex-1">
+              <img
+                src="/images/reachouttogether.jpeg"
+                alt="Canada's Top Mental Health Advocate Awards Nominee - ReachOutTogether"
+                className="w-full max-w-sm rounded-lg shadow-lg"
+              />
+            </div>
+            <div className="flex-1">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900">
+                Canada's Top Mental Health Advocate Awards
+              </h3>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Nominated as a finalist in recognition of innovation and impact in mental health advocacy. This nomination reflects the work done through the podcast, speaking engagements, and commitment to fostering meaningful conversations around resilience, mental wellness, and navigating life's challenges with intention.
+              </p>
+              <a
+                href="https://www.reachouttogether.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-700 font-medium transition-colors"
+              >
+                Learn more about ReachOutTogether →
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Card-styled CTA matching Podcasts page */}
       <a
