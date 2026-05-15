@@ -36,6 +36,7 @@ export default function Footer() {
             >
               <li><a href="/" className="text-sky-100 hover:[color:var(--primary)]">Home</a></li>
               <li><a href="/podcasts" className="text-sky-100 hover:[color:var(--primary)]">Podcasts</a></li>
+              <li><a href="/reviews" className="text-sky-100 hover:[color:var(--primary)]">Reviews</a></li>
               <li><a href="/media" className="text-sky-100 hover:[color:var(--primary)]">Photos and Videos</a></li>
               <li><a href="/events" className="text-sky-100 hover:[color:var(--primary)]">Events</a></li>
               <li><a href="/press" className="text-sky-100 hover:[color:var(--primary)]">Press & Interviews</a></li>
