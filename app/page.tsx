@@ -86,11 +86,6 @@ export default function Home() {
                 <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-sky-200/40 via-white/40 to-cyan-200/30 blur-2xl" />
                 <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-slate-950 shadow-[0_30px_90px_rgba(2,8,23,0.18)]">
                   <div className="aspect-[4/5] w-full bg-cover bg-center" style={{ backgroundImage: "url(/images/reachouttogether.jpeg)" }} />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent p-6 text-white">
-                    <div className="text-sm uppercase tracking-[0.35em] text-white/70">Meet Valeria Rusnak</div>
-                    <div className="mt-2 text-xl font-semibold">Speaker, Host & Mental Health Advocate</div>
-                    <div className="mt-3 text-sm leading-6 text-white/80">Conversations shaped to help people turn rejection into direction.</div>
-                  </div>
                 </div>
               </div>
             </div>
