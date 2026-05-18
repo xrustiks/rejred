@@ -1,11 +1,14 @@
 import Link from "next/link";
+import FadeInOnScroll from "@/components/FadeInOnScroll";
+import HiddenUntilScroll from "@/components/HiddenUntilScroll";
 
 export default function Home() {
   return (
-  <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-sky-50">
+  <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-sky-50 relative">
     <div className="container mx-auto px-24 sm:px-36 lg:px-48 py-10 sm:py-16 md:py-20">
       {/* Hero Section - Enhanced */}
-      <section className="text-center mb-8 sm:mb-10 md:mb-12">
+      <FadeInOnScroll>
+        <section className="text-center mb-8 sm:mb-10 md:mb-12">
         <div className="mb-8">
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
             <span className="text-gray-900">The Rejected Pre-Med</span>
@@ -33,9 +36,12 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      </FadeInOnScroll>
 
       {/* About Valeria Section - Enhanced Layout */}
-      <section className="mb-2 sm:mb-3 md:mb-4 py-8 sm:py-10">
+      <HiddenUntilScroll>
+        <FadeInOnScroll delay={200}>
+          <section className="mb-2 sm:mb-3 md:mb-4 py-8 sm:py-10">
         <div className="overflow-hidden">
           {/* Image - Desktop only (keeps wrap effect) */}
           <div className="hidden lg:block float-left lg:w-1/2 lg:mr-8 mb-6 lg:mb-0">
@@ -98,9 +104,13 @@ export default function Home() {
           </div>
         </div>
       </section>
+        </FadeInOnScroll>
+      </HiddenUntilScroll>
 
       {/* Featured In Section */}
-      <section className="bg-white rounded-2xl p-8 sm:p-12 shadow-lg border border-sky-100 mb-16 sm:mb-20">
+      <HiddenUntilScroll>
+        <FadeInOnScroll delay={300}>
+          <section className="bg-white rounded-2xl p-8 sm:p-12 shadow-lg border border-sky-100 mb-16 sm:mb-20">
         <h3 className="text-2xl font-bold text-gray-900 mb-6">Featured In</h3>
         <p className="text-gray-700 leading-relaxed">
           <span className="font-semibold">The Western Wheel Newspaper</span> • 
@@ -112,9 +122,13 @@ export default function Home() {
           <span className="font-semibold"> Golden Key Academy</span>
         </p>
       </section>
+        </FadeInOnScroll>
+      </HiddenUntilScroll>
 
       {/* Quick Access Grid - Moved to Bottom */}
-      <section>
+      <HiddenUntilScroll>
+        <FadeInOnScroll delay={400}>
+          <section>
         <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-gray-900">Explore More</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <Link
@@ -187,7 +201,12 @@ export default function Home() {
           </Link>
         </div>
       </section>
+        </FadeInOnScroll>
+      </HiddenUntilScroll>
     </div>
+
+    {/* Fade overlay at bottom to blend content with background */}
+    <div className="fixed bottom-0 left-0 right-0 h-80 scroll-fade-overlay pointer-events-none" />
   </div>
   );
 }
