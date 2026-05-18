@@ -2,211 +2,201 @@ import Link from "next/link";
 import FadeInOnScroll from "@/components/FadeInOnScroll";
 import HiddenUntilScroll from "@/components/HiddenUntilScroll";
 
+const featuredItems = [
+  {
+    label: "Podcast",
+    href: "/podcasts",
+    description: "Listen to episodes and subscribe via RSS",
+    icon: <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4a6 6 0 1 1 0 12A6 6 0 0 1 12 6zm-1 3v6l5-3-5-3z" />,
+  },
+  {
+    label: "Media",
+    href: "/media",
+    description: "Photos and videos on Instagram",
+    icon: <path d="M12 2C7.58 2 4 5.58 4 10v4c0 4.42 3.58 8 8 8s8-3.58 8-8v-4C20 5.58 16.42 2 12 2zm0 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm6-1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />,
+  },
+  {
+    label: "Support",
+    href: "/support",
+    description: "Help support the mission",
+    icon: <path d="M3 8h14a4 4 0 1 1 0 8H3V8zm14 6a2 2 0 1 0 0-4H5v4h12zM3 18h14v2H3v-2z" />,
+  },
+];
+
 export default function Home() {
   return (
-  <div className="min-h-screen bg-gradient-to-b from-sky-100 via-white to-sky-50 relative">
-    <div className="container mx-auto px-24 sm:px-36 lg:px-48 py-10 sm:py-16 md:py-20">
-      {/* Hero Section - Enhanced */}
-      <FadeInOnScroll>
-        <section className="text-center mb-8 sm:mb-10 md:mb-12">
-        <div className="mb-8">
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-4 sm:mb-6 leading-tight">
-            <span className="text-gray-900">The Rejected Pre-Med</span>
-            <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-cyan-500 to-sky-400">
-              Podcast
-            </span>
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 mx-auto max-w-2xl leading-relaxed">
-            Join conversations about resilience, mental wellness, and growth through rejection
-          </p>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            href="/podcasts"
-            className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white px-8 sm:px-10 py-4 rounded-xl font-semibold transition-all hover:shadow-lg hover:-translate-y-1"
-          >
-            Listen Now
-          </Link>
-          <Link
-            href="/media"
-            className="bg-white border-2 border-blue-400 hover:bg-blue-50 text-blue-600 px-8 sm:px-10 py-4 rounded-xl font-semibold transition-all hover:shadow-lg hover:-translate-y-1"
-          >
-            Watch & Explore
-          </Link>
-        </div>
-      </section>
-      </FadeInOnScroll>
+    <div className="relative min-h-screen overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(14,165,233,0.18),_transparent_35%),linear-gradient(180deg,_#ecfeff_0%,_#ffffff_34%,_#f8fbff_100%)]">
+      <div className="pointer-events-none absolute inset-x-0 top-0 h-[32rem] bg-[radial-gradient(circle_at_20%_20%,_rgba(255,255,255,0.95),_transparent_38%),radial-gradient(circle_at_80%_10%,_rgba(125,211,252,0.45),_transparent_28%)] opacity-90" />
+      <div className="pointer-events-none absolute inset-x-0 top-24 h-96 bg-[radial-gradient(circle,_rgba(14,165,233,0.08),_transparent_60%)] blur-3xl" />
 
-      {/* About Valeria Section - Enhanced Layout */}
-      <HiddenUntilScroll>
-        <FadeInOnScroll delay={200}>
-          <section className="mb-2 sm:mb-3 md:mb-4 py-8 sm:py-10">
-        <div className="overflow-hidden">
-          {/* Image - Desktop only (keeps wrap effect) */}
-          <div className="hidden lg:block float-left lg:w-1/2 lg:mr-8 mb-6 lg:mb-0">
-            <div 
-              className="rounded-2xl shadow-2xl overflow-hidden w-full aspect-square hover:shadow-3xl transition-shadow"
-              style={{ background: `url(/images/reachouttogether.jpeg) center/cover` }}
-            />
-          </div>
-          
-          {/* Text Content - Wraps around image */}
-          <div>
-            <div className="inline-block mb-4">
-              <span className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
-                Meet Valeria Rusnak
-              </span>
+      <div className="relative mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+        <FadeInOnScroll>
+          <section className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/70 p-8 shadow-[0_20px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl sm:p-10 lg:p-14">
+            <div className="pointer-events-none absolute -right-24 -top-16 h-64 w-64 rounded-full bg-cyan-200/40 blur-3xl" />
+            <div className="pointer-events-none absolute -left-20 bottom-0 h-56 w-56 rounded-full bg-sky-300/30 blur-3xl" />
+
+            <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+              <div>
+                <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-200/80 bg-sky-50/80 px-4 py-2 text-sm font-medium text-sky-800 shadow-sm">
+                  <span className="h-2 w-2 rounded-full bg-cyan-500" />
+                  Mental wellness • resilience • growth
+                </div>
+
+                <h1 className="max-w-3xl text-5xl font-semibold leading-[0.95] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
+                  <span className="block">The Rejected Pre-Med</span>
+                  <span className="mt-2 block bg-gradient-to-r from-sky-700 via-cyan-500 to-sky-400 bg-clip-text text-transparent">
+                    Podcast
+                  </span>
+                </h1>
+
+                <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 sm:text-xl">
+                  Join conversations about resilience, mental wellness, and growth through rejection
+                </p>
+
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                  <Link
+                    href="/podcasts"
+                    className="inline-flex items-center justify-center rounded-full bg-slate-950 px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-slate-950/15 transition-transform duration-300 hover:-translate-y-0.5 hover:bg-slate-800"
+                  >
+                    Listen Now
+                  </Link>
+                  <Link
+                    href="/media"
+                    className="inline-flex items-center justify-center rounded-full border border-sky-200 bg-white/90 px-7 py-3.5 text-base font-semibold text-sky-900 shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:border-sky-300 hover:bg-sky-50"
+                  >
+                    Watch & Explore
+                  </Link>
+                </div>
+
+                <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-3">
+                  {[
+                    ["Speaking", "Neuroscience-backed stories"],
+                    ["Research & Wellbeing", "Evidence-based mental health insights"],
+                    ["Media", "Audio, video and resources"],
+                  ].map(([title, text]) => (
+                    <div key={title} className="rounded-2xl border border-white/80 bg-white/80 p-4 shadow-sm backdrop-blur">
+                      <div className="text-sm font-semibold text-slate-900">{title}</div>
+                      <div className="mt-1 text-sm leading-6 text-slate-600">{text}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="relative">
+                <div className="absolute -inset-4 rounded-[2rem] bg-gradient-to-br from-sky-200/40 via-white/40 to-cyan-200/30 blur-2xl" />
+                <div className="relative overflow-hidden rounded-[2rem] border border-white/70 bg-slate-950 shadow-[0_30px_90px_rgba(2,8,23,0.18)]">
+                  <div className="aspect-[4/5] w-full bg-cover bg-center" style={{ backgroundImage: "url(/images/reachouttogether.jpeg)" }} />
+                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent p-6 text-white">
+                    <div className="text-sm uppercase tracking-[0.35em] text-white/70">Meet Valeria Rusnak</div>
+                    <div className="mt-2 text-xl font-semibold">Speaker, Host & Mental Health Advocate</div>
+                    <div className="mt-3 text-sm leading-6 text-white/80">Conversations shaped to help people turn rejection into direction.</div>
+                  </div>
+                </div>
+              </div>
             </div>
-            
-            <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-gray-900 leading-tight">
-              Speaker, Host & Mental Health Advocate
-            </h2>
-            
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Valeria is available to collaborate as a Rejection and Resilience Speaker. She brings an academic foundation in neuroscience, Community Helpers training and is currently completing her Master of Management at the University of Calgary.
-            </p>
-            
-            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-              If you are looking for a dynamic and thoughtful speaker whose delivery has been described as engaging, authentic, and impactful, and who consistently receives positive feedback from audiences, Valeria would be honored to collaborate.
-              How do we build confidence when facing rejection? How do we become resilient in moments that challenge our identity, direction, or self-worth? These are not topics commonly taught in school curriculums — yet they are experiences nearly everyone will face.
-              Whether speaking to a health and wellness class, a student leadership initiative, or your organization, Valeria shares research-informed insights paired with lived experience and practical tools.
-              Rejection can feel deeply personal — but it can also be redirection. It can be an invitation to reflect, recalibrate, and grow — if we are willing to see it that way.
-              For speaking inquiries and collaborations, please contact Valeria. 
-
-            </p>
-
-            <Link
-              href="/about"
-              className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-400 hover:to-cyan-400 text-white px-8 py-3 rounded-xl font-semibold transition-all hover:shadow-lg hover:-translate-y-1 w-fit"
-            >
-              More about the author
-            </Link>
-          </div>
-
-          {/* Image - Mobile only (after text, before venues) */}
-          <div className="lg:hidden w-full mt-6">
-            <div 
-              className="rounded-2xl shadow-2xl overflow-hidden w-full aspect-square hover:shadow-3xl transition-shadow"
-              style={{ background: `url(/images/reachouttogether.jpeg) center/cover` }}
-            />
-          </div>
-        </div>
-
-        {/* Recent Speaking Venues - Full Width */}
-        <div className="bg-sky-50 rounded-xl p-6 sm:p-8 border-l-4 border-blue-500 mt-12">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">Recent Speaking Venues</h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Calgary</div>
-            <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> University of Lethbridge</div>
-            <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> Foothills school division and Calgary Board of Education member schools</div>
-            <div className="text-sm text-gray-700 flex items-start"><span className="text-blue-500 font-bold mr-2">•</span> General Mills</div>
-          </div>
-        </div>
-      </section>
+          </section>
         </FadeInOnScroll>
-      </HiddenUntilScroll>
 
-      {/* Featured In Section */}
-      <HiddenUntilScroll>
-        <FadeInOnScroll delay={300}>
-          <section className="bg-white rounded-2xl p-8 sm:p-12 shadow-lg border border-sky-100 mb-16 sm:mb-20">
-        <h3 className="text-2xl font-bold text-gray-900 mb-6">Featured In</h3>
-        <p className="text-gray-700 leading-relaxed">
-          <span className="font-semibold">The Western Wheel Newspaper</span> • 
-          <span className="font-semibold"> The Okotoks Radio 100.9</span> • 
-          <span className="font-semibold"> The Tactical Empathy Podcast</span> • 
-          <span className="font-semibold"> North Okotoks Living Magazine</span> • 
-          <span className="font-semibold"> Everything Storytelling & Mental Health Podcast</span> • 
-          <span className="font-semibold"> University of Toronto CPD</span> • 
-          <span className="font-semibold"> Golden Key Academy</span>
-        </p>
-      </section>
-        </FadeInOnScroll>
-      </HiddenUntilScroll>
+        <HiddenUntilScroll>
+          <FadeInOnScroll delay={220}>
+            <section className="mt-8 grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+              <div className="rounded-[2rem] border border-slate-200/80 bg-white/80 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.06)] backdrop-blur-xl sm:p-8 lg:p-10">
+                <div className="mb-4 inline-flex rounded-full bg-sky-50 px-4 py-2 text-sm font-semibold text-sky-800">About Valeria Rusnak</div>
 
-      {/* Quick Access Grid - Moved to Bottom */}
-      <HiddenUntilScroll>
-        <FadeInOnScroll delay={400}>
-          <section>
-        <h2 className="text-3xl sm:text-4xl font-bold mb-10 text-gray-900">Explore More</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <Link
-            href="/podcasts"
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group"
-          >
-            <div
-              className="h-48 flex items-center justify-center"
-              style={{ background: `linear-gradient(135deg, var(--primary), #0284c7)` }}
-            >
-              <svg
-                className="w-16 h-16 text-white"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4a6 6 0 1 1 0 12A6 6 0 0 1 12 6zm-1 3v6l5-3-5-3z" />
-              </svg>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Podcast</h3>
-              <p className="text-gray-600">Listen to episodes and subscribe via RSS</p>
-            </div>
-          </Link>
-          
-          <Link
-            href="/media"
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group"
-          >
-            <div
-              className="h-48 flex items-center justify-center"
-              style={{ background: `linear-gradient(135deg, var(--primary), #0284c7)` }}
-            >
-              <svg
-                className="w-16 h-16 text-white"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path d="M12 2C7.58 2 4 5.58 4 10v4c0 4.42 3.58 8 8 8s8-3.58 8-8v-4C20 5.58 16.42 2 12 2zm0 4a4 4 0 1 1 0 8 4 4 0 0 1 0-8zm6-1a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-              </svg>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Media</h3>
-              <p className="text-gray-600">Photos and videos on Instagram</p>
-            </div>
-          </Link>
-          
-          <Link
-            href="/support"
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow group"
-          >
-            <div
-              className="h-48 flex items-center justify-center"
-              style={{ background: `linear-gradient(135deg, var(--primary), #0284c7)` }}
-            >
-              <svg
-                className="w-16 h-16 text-white"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path d="M3 8h14a4 4 0 1 1 0 8H3V8zm14 6a2 2 0 1 0 0-4H5v4h12zM3 18h14v2H3v-2z" />
-              </svg>
-            </div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">Support</h3>
-              <p className="text-gray-600">Help support the mission</p>
-            </div>
-          </Link>
-        </div>
-      </section>
-        </FadeInOnScroll>
-      </HiddenUntilScroll>
+                <h2 className="max-w-2xl text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Speaker, Host & Mental Health Advocate</h2>
+
+                <div className="mt-6 space-y-5 text-lg leading-8 text-slate-700">
+                  <p>
+                    Valeria is available to collaborate as a Rejection and Resilience Speaker. She brings an academic foundation in neuroscience, Community Helpers training and is currently completing her Master of Management at the University of Calgary.
+                  </p>
+
+                  <p>
+                    If you are looking for a dynamic and thoughtful speaker whose delivery has been described as engaging, authentic, and impactful, and who consistently receives positive feedback from audiences, Valeria would be honored to collaborate.
+                    How do we build confidence when facing rejection? How do we become resilient in moments that challenge our identity, direction, or self-worth? These are not topics commonly taught in school curriculums — yet they are experiences nearly everyone will face.
+                    Whether speaking to a health and wellness class, a student leadership initiative, or your organization, Valeria shares research-informed insights paired with lived experience and practical tools.
+                    Rejection can feel deeply personal — but it can also be redirection. It can be an invitation to reflect, recalibrate, and grow — if we are willing to see it that way.
+                    For speaking inquiries and collaborations, please contact Valeria.
+                  </p>
+                </div>
+
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <Link href="/about" className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-sky-600 to-cyan-500 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-500/20 transition-transform duration-300 hover:-translate-y-0.5">More about the author</Link>
+                  <div className="inline-flex items-center rounded-full border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-600">Available for speaking, consulting, and collaboration</div>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div className="overflow-hidden rounded-[2rem] border border-white/70 bg-white/80 shadow-[0_18px_60px_rgba(15,23,42,0.06)] backdrop-blur-xl">
+                  <div className="bg-slate-950 px-6 py-5 text-white">
+                    <div className="text-sm uppercase tracking-[0.3em] text-white/60">Recent Speaking Venues</div>
+                  </div>
+                  <div className="grid gap-3 p-6 sm:grid-cols-2">
+                    {[
+                      "University of Calgary",
+                      "University of Lethbridge",
+                      "Foothills school division and Calgary Board of Education member schools",
+                      "General Mills",
+                    ].map((venue) => (
+                      <div key={venue} className="rounded-2xl border border-sky-100 bg-sky-50/70 px-4 py-4 text-sm leading-6 text-slate-700">
+                        <span className="mr-2 text-sky-600">•</span>
+                        {venue}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="rounded-[2rem] border border-slate-200/80 bg-white/80 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.06)] backdrop-blur-xl">
+                  <div className="text-sm font-semibold uppercase tracking-[0.3em] text-slate-500">Featured In</div>
+                  <p className="mt-4 text-lg leading-8 text-slate-700">
+                    <span className="font-semibold text-slate-900">The Western Wheel Newspaper</span> •
+                    <span className="font-semibold text-slate-900"> The Okotoks Radio 100.9</span> •
+                    <span className="font-semibold text-slate-900"> The Tactical Empathy Podcast</span> •
+                    <span className="font-semibold text-slate-900"> North Okotoks Living Magazine</span> •
+                    <span className="font-semibold text-slate-900"> Everything Storytelling & Mental Health Podcast</span> •
+                    <span className="font-semibold text-slate-900"> University of Toronto CPD</span> •
+                    <span className="font-semibold text-slate-900"> Golden Key Academy</span>
+                  </p>
+                </div>
+              </div>
+            </section>
+          </FadeInOnScroll>
+        </HiddenUntilScroll>
+
+        <HiddenUntilScroll>
+          <FadeInOnScroll delay={320}>
+            <section className="mt-8">
+              <div className="mb-6 flex items-end justify-between gap-6">
+                <div>
+                  <div className="text-sm font-semibold uppercase tracking-[0.3em] text-sky-700">Explore More</div>
+                  <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">More ways to connect with the project</h2>
+                </div>
+              </div>
+
+              <div className="grid gap-6 md:grid-cols-3">
+                {featuredItems.map((item, index) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="group overflow-hidden rounded-[1.75rem] border border-slate-200/80 bg-white/80 shadow-[0_18px_60px_rgba(15,23,42,0.06)] backdrop-blur-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_70px_rgba(15,23,42,0.12)]"
+                  >
+                    <div className={`h-40 flex items-center justify-center bg-gradient-to-br ${index === 0 ? "from-sky-600 via-cyan-500 to-sky-400" : index === 1 ? "from-cyan-600 via-sky-500 to-blue-400" : "from-blue-600 via-sky-500 to-cyan-400"}`}>
+                      <svg className="h-16 w-16 text-white transition-transform duration-300 group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        {item.icon}
+                      </svg>
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-semibold text-slate-950 transition-colors group-hover:text-sky-700">{item.label}</h3>
+                      <p className="mt-2 text-sm leading-6 text-slate-600">{item.description}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          </FadeInOnScroll>
+        </HiddenUntilScroll>
+      </div>
+
+      <div className="fixed bottom-0 left-0 right-0 h-80 scroll-fade-overlay pointer-events-none" />
     </div>
-
-    {/* Fade overlay at bottom to blend content with background */}
-    <div className="fixed bottom-0 left-0 right-0 h-80 scroll-fade-overlay pointer-events-none" />
-  </div>
   );
 }
