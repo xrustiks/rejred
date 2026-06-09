@@ -39,7 +39,7 @@ export default function Home() {
               <div>
                 <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-sky-200/80 bg-sky-50/80 px-4 py-2 text-sm font-medium text-sky-800 shadow-sm">
                   <span className="h-2 w-2 rounded-full bg-cyan-500" />
-                  Mental wellness • resilience • growth
+                  Mental wellness • Resilience • Growth
                 </div>
 
                 <h1 className="max-w-3xl text-5xl font-semibold leading-[0.95] tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">
@@ -136,6 +136,7 @@ export default function Home() {
                       "University of Lethbridge",
                       "Foothills school division and Calgary Board of Education member schools",
                       "General Mills",
+                      "Banff Mental Health Summit"
                     ].map((venue) => (
                       <div key={venue} className="rounded-2xl border border-sky-100 bg-sky-50/70 px-4 py-4 text-sm leading-6 text-slate-700">
                         <span className="mr-2 text-sky-600">•</span>
