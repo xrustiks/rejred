@@ -70,7 +70,7 @@ export default function Home() {
 
                 <div className="mt-8 grid max-w-2xl gap-3 sm:grid-cols-3">
                   {[
-                    ["Speaking", "Neuroscience-backed stories"],
+                    ["Speaking", "Evidence-based storytelling"],
                     ["Research & Wellbeing", "Evidence-based mental health insights"],
                     ["Media", "Audio, video and resources"],
                   ].map(([title, text]) => (
