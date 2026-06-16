@@ -136,7 +136,8 @@ export default function Home() {
                       "University of Lethbridge",
                       "Foothills school division and Calgary Board of Education member schools",
                       "General Mills",
-                      "Banff Mental Health Summit"
+                      "Banff Mental Health Summit",
+                      "Golden Key Annual Summit"
                     ].map((venue) => (
                       <div key={venue} className="rounded-2xl border border-sky-100 bg-sky-50/70 px-4 py-4 text-sm leading-6 text-slate-700">
                         <span className="mr-2 text-sky-600">•</span>

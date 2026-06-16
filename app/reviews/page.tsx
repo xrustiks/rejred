@@ -26,7 +26,7 @@ const reviews = [
   {
     id: 4,
     name: "Tina Li",
-    role: "Student Testimonial - VP of North Trail High School Key Club",
+    role: "North Trail High School Student, Calgary Area",
     text: "As for your presentation, I loved it! It was incredibly inspiring and felt very authentic. Your message was a refreshing reminder that rejection isn't the end, but is often a form of redirection. I loved how you shared strategies for navigating rejection and building resilience through it.",
   },
   {
@@ -38,13 +38,13 @@ const reviews = [
   {
     id: 6,
     name: "Michael Cook",
-    role: "Chair of The United Way / Okotoks Partnership, Regional Vice President Specialized Sales",
+    role: "Chair of The United Way / Okotoks Partnership Committee 2025",
     text: "I had the pleasure of attending a presentation put on by Valeria. The delivery was exceptional and her ability to engage the room was phenomenal.",
   },
   {
     id: 7,
     name: "Tomi Ogeye",
-    role: "MA - Specialist new student programs",
+    role: "MA - Specialist, new student programs, University of Calgary",
     text: "It was great having Valeria! Valeria was flexible with the planning and clearly liked engaging with students. Her message is important and I hope more students get the opportunity to hear from her. People in general would learn to embrace their feelings of disappointment after rejection and then take action in exploring other avenues for connection and advancement, after hearing from Valeria.",
   },
 ];
