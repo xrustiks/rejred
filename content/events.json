@@ -1,0 +1,7 @@
+{
+  "title": "Events",
+  "description": "Upcoming events and appearances.",
+  "intro": "This page will list upcoming events, meetups, live recordings and public appearances. If you want to invite the host to speak or collaborate, please contact us via the Contact link on the About page.",
+  "emptyState": "No events scheduled yet. Check back soon or follow us on Instagram for updates.",
+  "events": []
+}

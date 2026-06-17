@@ -6,6 +6,41 @@ import { PodcastEpisode, VideoEpisode } from '@/types/podcast';
 // This file contains functions to read podcast and video content from the filesystem
 const contentDirectory = path.join(process.cwd(), 'content');
 
+export type EventItem = {
+  date?: string;
+  title: string;
+  location?: string;
+  description?: string;
+  link?: string;
+};
+
+export type EventsPageContent = {
+  title: string;
+  description: string;
+  intro: string;
+  emptyState: string;
+  events: EventItem[];
+};
+
+export function getEventsPageContent(): EventsPageContent {
+  const localEventsPath = path.join(contentDirectory, 'events.json');
+  const deployedEventsPath = path.join(process.cwd(), 'public', 'admin', 'data', 'events.json');
+  const eventsPath = fs.existsSync(deployedEventsPath) ? deployedEventsPath : localEventsPath;
+
+  if (!fs.existsSync(eventsPath)) {
+    return {
+      title: 'Events',
+      description: 'Upcoming events and appearances.',
+      intro: 'This page will list upcoming events, meetups, live recordings and public appearances.',
+      emptyState: 'No events scheduled yet. Check back soon or follow us on Instagram for updates.',
+      events: [],
+    };
+  }
+
+  const fileContents = fs.readFileSync(eventsPath, 'utf8');
+  return JSON.parse(fileContents) as EventsPageContent;
+}
+
 export function getEpisodes(): PodcastEpisode[] {
   const episodesDirectory = path.join(contentDirectory, 'episodes');
   

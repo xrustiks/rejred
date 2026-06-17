@@ -1,0 +1,36 @@
+{
+    "title": "Events",
+    "description": "Upcoming events and appearances.",
+    "intro": "This page will list upcoming events, meetups, live recordings and public appearances. If you want to invite the host to speak or collaborate, please contact us via the Contact link on the About page.",
+    "emptyState": "No events scheduled yet. Check back soon or follow us on Instagram for updates.",
+    "events": [
+        {
+            "title": "dskjhfd",
+            "date": "2026-06-19",
+            "location": "dsfhdsjk",
+            "description": "dsfdsfdsfsdfds",
+            "link": "http://dsssd"
+        },
+        {
+            "title": "asdad",
+            "date": "2026-06-19",
+            "location": "asdas",
+            "description": "qwedascdsa",
+            "link": "http://dsssd"
+        },
+        {
+            "title": "asd",
+            "date": "2026-06-26",
+            "location": "asdsa",
+            "description": "wqewe",
+            "link": "http://dsssd"
+        },
+        {
+            "title": "asdsa",
+            "date": "2026-06-19",
+            "location": "asd",
+            "description": "asdsad",
+            "link": "http://dsssd"
+        }
+    ]
+}
