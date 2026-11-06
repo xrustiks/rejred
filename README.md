@@ -36,6 +36,16 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) to see your site.
 
+### Local Admin Panel
+
+In a separate terminal, run:
+
+```bash
+npm run admin
+```
+
+Then open [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/). Stop the server with `Ctrl+C`.
+
 ### Building for Production
 
 ```bash

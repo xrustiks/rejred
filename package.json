@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "admin": "php -S 127.0.0.1:8000 -t public",
     "build": "next build",
     "start": "next start",
     "export": "next build && echo 'Static files ready in /out folder for Bluehost upload!'"
