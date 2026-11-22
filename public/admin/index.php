@@ -16,7 +16,7 @@ if (isset($_POST['logout'])) {
 if (!isset($_SESSION['admin_logged_in'])) {
     $error = '';
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['password'])) {
-        if (password_verify($_POST['password'], $config['password_hash'])) {
+        if (is_string($_POST['password']) && hash_equals($config['password'], $_POST['password'])) {
             $_SESSION['admin_logged_in'] = true;
             header('Location: /admin/');
             exit;
